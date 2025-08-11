@@ -11,9 +11,9 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 
 
 const textureLoader = new THREE.TextureLoader();
-const color = textureLoader.load('/textures/color.jpg');
-const roughness = textureLoader.load('/textures/roughness.jpg');
-const normal = textureLoader.load('/textures/normal.png');
+const color = textureLoader.load('./textures/color.jpg');
+const roughness = textureLoader.load('./textures/roughness.jpg');
+const normal = textureLoader.load('./textures/normal.png');
 
 const geometry = new THREE.BoxGeometry( 3, 1.8, 2);
 const material = new THREE.MeshStandardMaterial( { map: color, roughnessMap: roughness, normalMap: normal } );
