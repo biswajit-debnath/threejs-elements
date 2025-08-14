@@ -9,7 +9,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        sphere: resolve(__dirname, 'sphere.html')
+        sphere: resolve(__dirname, 'sphere.html'),
+        earth: resolve(__dirname, 'earth.html')
       }
     }
   },
